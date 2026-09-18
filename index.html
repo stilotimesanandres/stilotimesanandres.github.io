@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STILO-TIME 2026 | San Andrés - Tu estilo, nuestra pasión</title>
+<meta name="description" content="Stilo Time San Andrés - Venta de ropa para todas las edades. Tu estilo, nuestra pasión.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0A0A0A;--yellow:#FFD93D;--gold:#FFB800;--turquoise:#00D1C1;--green:#2ECC71;--white:#FFFFFF;--gray:#161616;--gray2:#222}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:var(--black);color:var(--white);overflow-x:hidden}
+h1,h2,h3{font-family:'Bebas Neue',sans-serif;letter-spacing:1.5px}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(10,10,10,0.92);backdrop-filter:blur(12px);border-bottom:2px solid var(--yellow);display:flex;justify-content:space-between;align-items:center;padding:12px 5%}
+.logo{font-family:'Bebas Neue';font-size:30px;color:var(--yellow);line-height:1} .logo small{display:block;font-family:'Poppins';font-size:11px;letter-spacing:3px;color:var(--turquoise);margin-top:-2px}
+.menu{display:flex;gap:22px;list-style:none} .menu a{color:var(--white);font-weight:600;font-size:13px} .menu a:hover{color:var(--yellow)}
+.hero{min-height:100vh;padding:120px 5% 70px;display:grid;grid-template-columns:1.15fr 0.85fr;align-items:center;gap:30px;background:radial-gradient(circle at 15% 25%, rgba(0,209,193,0.28), transparent 45%), radial-gradient(circle at 85% 65%, rgba(255,217,61,0.22), transparent 45%), var(--black)}
+.hero h1{font-size:78px;line-height:0.88} .yellow{color:var(--yellow)} .turq{color:var(--turquoise)}
+.hero p{margin:22px 0;font-size:17px;opacity:0.9;line-height:1.6}
+.btn{display:inline-block;padding:14px 28px;border-radius:32px;font-weight:800;transition:0.3s;cursor:pointer;text-align:center;font-size:14px}
+.btn-yellow{background:var(--yellow);color:var(--black);box-shadow:0 8px 20px rgba(255,217,61,0.3)} .btn-yellow:hover{transform:translateY(-2px);background:var(--gold)}
+.btn-outline{border:2px solid var(--turquoise);color:var(--turquoise)} .btn-outline:hover{background:var(--turquoise);color:var(--black)}
+.badge{display:inline-block;background:rgba(0,209,193,0.15);border:1px solid var(--turquoise);color:var(--turquoise);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:15px}
+.polaroids{position:relative;height:500px}
+.pol{position:absolute;background:white;padding:10px 10px 45px 10px;box-shadow:0 15px 35px rgba(0,0,0,0.6);width:210px;transition:0.3s}
+.pol img{width:100%;height:210px;object-fit:cover;background:#222;display:block}
+.pol span{color:#111;font-family:'Bebas Neue';display:block;text-align:center;margin-top:10px;font-size:18px}
+.pol:nth-child(1){transform:rotate(-6deg);z-index:3}
+.pol:nth-child(2){left:130px;top:70px;transform:rotate(7deg);z-index:2}
+.pol:nth-child(3){left:30px;top:240px;transform:rotate(-9deg);z-index:1}
+.pol:hover{transform:rotate(0deg) scale(1.08);z-index:10}
+section{padding:85px 5%} .sec-title{font-size:56px;line-height:1} .sec-sub{color:var(--turquoise);font-weight:600;margin:10px 0 40px;letter-spacing:1px}
+.grid-catalog{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.card{background:var(--gray);border-radius:20px;overflow:hidden;border:1px solid rgba(255,217,61,0.18);transition:0.35s}
+.card:hover{transform:translateY(-6px);border-color:var(--yellow);box-shadow:0 15px 30px rgba(255,217,61,0.15)}
+.card img{width:100%;height:300px;object-fit:cover;background:linear-gradient(135deg,#1c1c1c,#2a2a2a);display:block}
+.card-info{padding:20px} .card-info h3{color:var(--yellow);font-size:22px} .card-info p{opacity:0.7;font-size:13px;margin:6px 0}
+.price{color:var(--turquoise);font-weight:800;font-size:22px;margin:10px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:22px}
+.gal-item{background:white;padding:8px 8px 36px 8px;transform:rotate(-2deg);cursor:pointer;transition:0.3s;box-shadow:0 8px 20px rgba(0,0,0,0.4)}
+.gal-item:nth-child(even){transform:rotate(2.5deg)} .gal-item:hover{transform:rotate(0deg) scale(1.06);z-index:10}
+.gal-item img{width:100%;height:170px;object-fit:cover;background:#222;display:block}
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
+.video-box{aspect-ratio:16/9;background:var(--gray2);border-radius:18px;overflow:hidden;border:2px solid rgba(0,209,193,0.4)}
+.contact-box{background:linear-gradient(135deg, #161616, #222);border:2px solid var(--yellow);border-radius:28px;padding:45px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:35px}
+.contact-box h3{font-size:42px;color:var(--yellow)} .contact-line{margin:18px 0;display:flex;align-items:center;gap:12px;font-size:15px}
+.social-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.s-btn{padding:10px 18px;border-radius:30px;font-weight:700;font-size:13px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05)}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;background:#25D366;color:white;width:62px;height:62px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:30px;font-weight:800;z-index:9999;box-shadow:0 8px 25px rgba(0,0,0,0.5)}
+footer{padding:45px 5%;text-align:center;border-top:1px solid #222;opacity:0.75;font-size:13px;line-height:1.8}
+#lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);display:none;justify-content:center;align-items:center;z-index:2000;padding:20px} #lightbox img{max-width:92%;max-height:92%;border:10px solid white}
+@media(max-width:900px){.hero{grid-template-columns:1fr} .contact-box{grid-template-columns:1fr} .menu{display:none} .hero h1{font-size:52px} .polaroids{height:420px} .sec-title{font-size:42px}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">STILO-TIME <small>2026 • SAN ANDRÉS</small></div>
+<ul class="menu">
+<li><a href="#inicio">INICIO</a></li>
+<li><a href="#catalogo">CATÁLOGO</a></li>
+<li><a href="#nosotros">NOSOTROS</a></li>
+<li><a href="#galeria">GALERÍA</a></li>
+<li><a href="#videos">VIDEOS</a></li>
+<li><a href="#contacto">CONTACTO</a></li>
+</ul>
+</nav>
+<a class="whatsapp-float" href="https://wa.me/573117536876?text=Hola%20STILO-TIME%202026" target="_blank">W</a>
+
+<section class="hero" id="inicio">
+<div>
+<div class="badge">★ NUEVA COLECCIÓN 2026 • SAN ANDRÉS ISLA</div>
+<h1>STILO-TIME<br><span class="yellow">2026</span><br><span class="turq">SAN ANDRÉS</span></h1>
+<p><strong>“Tu estilo, nuestra pasión.”</strong><br>Venta de ropa para todas las edades. Moda tropical, urbana y caribeña hecha en la isla.</p>
+<a href="#catalogo" class="btn btn-yellow">VER CATÁLOGO 2026</a>
+<a href="https://wa.me/573117536876" class="btn btn-outline" target="_blank">WHATSAPP 311 753 6876</a>
+</div>
+<div class="polaroids">
+<div class="pol"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"><span>STILO 2026</span></div>
+<div class="pol"><img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=400"><span>SAN ANDRÉS</span></div>
+<div class="pol"><img src="https://images.unsplash.com/photo-1518834107812-67b0b288f498?w=400"><span>TU ESTILO</span></div>
+</div>
+</section>
+
+<section id="catalogo">
+<h2 class="sec-title">CATÁLOGO <span class="yellow">2026</span></h2>
+<p class="sec-sub">COLECCIÓN TROPICAL • AGREGA PRODUCTOS FÁCILMENTE</p>
+<div class="grid-catalog">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500">
+<div class="card-info">
+<h3>CAMISETA TROPICAL STILO</h3>
+<p>Algodón premium • Diseño exclusivo</p>
+<div class="price">$85.000</div>
+<a href="https://wa.me/573117536876?text=Hola%20quiero%20la%20CAMISETA%20TROPICAL" target="_blank" class="btn btn-yellow" style="padding:10px 18px;font-size:13px;width:100%">PEDIR POR WHATSAPP</a>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1532243268703-15dc8b62a59e?w=500">
+<div class="card-info"><h3>GORRA SAN ANDRÉS 2026</h3><p>Edición limitada • Bordada</p><div class="price">$65.000</div><a href="https://wa.me/573117536876" target="_blank" class="btn btn-yellow" style="padding:10px 18px;font-size:13px;width:100%">PEDIR</a></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500">
+<div class="card-info"><h3>CONJUNTO URBANO CARIBE</h3><p>Style completo • Todas las tallas</p><div class="price">$149.000</div><a href="https://wa.me/573117536876" target="_blank" class="btn btn-yellow" style="padding:10px 18px;font-size:13px;width:100%">PEDIR</a></div>
+</div>
+</div>
+</section>
+
+<section id="nosotros" style="background:#111">
+<h2 class="sec-title">NOSOTROS</h2>
+<p class="sec-sub">DE SAN ANDRÉS PARA EL MUNDO</p>
+<div style="max-width:750px;line-height:1.9">
+<p>STILO-TIME nace en San Andrés con una idea clara: <strong>vestir tu actitud</strong>. Somos tropical, urbano y caribeño. Cada diseño lleva pinceladas de la isla, colores que vibran y la energía de nuestra gente.</p><br>
+<p>2026 es nuestro año. Esta web está construida para crecer: agrega fotos, videos y productos sin tener que rehacer nada.</p>
+</div>
+</section>
+
+<section id="galeria">
+<h2 class="sec-title">GALERÍA DE FOTOS</h2>
+<p class="sec-sub">CLIC PARA AMPLIAR • ESTILO POLAROID</p>
+<div class="gallery">
+<div class="gal-item" onclick="openLight(this)"><img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"></div>
+<div class="gal-item" onclick="openLight(this)"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400"></div>
+<div class="gal-item" onclick="openLight(this)"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"></div>
+<div class="gal-item" onclick="openLight(this)"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=400"></div>
+<div class="gal-item" onclick="openLight(this)"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"></div>
+<div class="gal-item" onclick="openLight(this)"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=400"></div>
+</div>
+</section>
+
+<section id="videos" style="background:#111">
+<h2 class="sec-title">VIDEOS</h2>
+<p class="sec-sub">CAMPAÑAS, BACKSTAGE Y PARRANDAS</p>
+<div class="video-grid">
+<div class="video-box"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe></div>
+<div class="video-box"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe></div>
+</div>
+</section>
+
+<section id="contacto">
+<div class="contact-box">
+<div>
+<h3>CONTÁCTANOS</h3>
+<p style="font-size:20px;margin:8px 0 5px"><strong>Estamos para ti</strong></p>
+<p style="opacity:0.8">¿Tienes dudas, quieres hacer un pedido o necesitas más información?<br><strong>¡Escríbenos! Será un gusto atenderte.</strong></p>
+<div class="contact-line">📱 <strong>WhatsApp:</strong> <a href="https://wa.me/573117536876" target="_blank" style="color:var(--yellow)">311 753 6876</a></div>
+<div class="contact-line">📘 <strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100089212774843" target="_blank" style="color:var(--turquoise)">Stilo Time San Andrés</a></div>
+<div class="contact-line">📸 <strong>Instagram:</strong> <span id="ig-text" style="opacity:0.6">Pendiente</span></div>
+<div class="contact-line">🎵 <strong>TikTok:</strong> <span id="tk-text" style="opacity:0.6">Pendiente</span></div>
+<div class="social-row">
+<a href="https://wa.me/573117536876" target="_blank" class="s-btn" style="background:var(--yellow);color:black">WhatsApp</a>
+<a href="https://www.facebook.com/profile.php?id=100089212774843" target="_blank" class="s-btn">Facebook</a>
+<a id="ig-btn" href="#" class="s-btn" style="opacity:0.5">Instagram</a>
+<a id="tk-btn" href="#" class="s-btn" style="opacity:0.5">TikTok</a>
+</div>
+</div>
+<div style="background:var(--black);border-radius:18px;padding:26px;text-align:center;border:1px solid #222">
+<p style="color:var(--yellow);font-weight:800">¿LISTO PARA TU PEDIDO?</p>
+<p style="font-size:13px;opacity:0.7;margin:10px 0 18px">Respuesta rápida por WhatsApp</p>
+<a href="https://wa.me/573117536876?text=Hola%20STILO-TIME%202026" target="_blank" class="btn btn-yellow" style="width:100%">ESCRIBIR POR WHATSAPP</a><br><br>
+<a href="https://www.facebook.com/profile.php?id=100089212774843" target="_blank" class="btn btn-outline" style="width:100%">IR A FACEBOOK</a>
+</div>
+</div>
+</section>
+
+<section id="redes" style="text-align:center;padding-top:30px">
+<h2 class="sec-title" style="font-size:38px">SÍGUENOS</h2>
+<div style="margin-top:20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
+<a href="https://www.facebook.com/profile.php?id=100089212774843" target="_blank" class="btn btn-yellow">FACEBOOK</a>
+<a id="btn-ig-footer" href="#" class="btn btn-outline">INSTAGRAM (pendiente)</a>
+<a id="btn-tk-footer" href="#" class="btn btn-outline">TIKTOK (pendiente)</a>
+</div>
+</section>
+
+<footer>
+<strong>STILO-TIME 2026</strong> | San Andrés Isla | “Tu estilo, nuestra pasión.”<br>
+WhatsApp 311 753 6876 • Facebook: Stilo Time San Andrés<br>
+© 2026 - Página preparada para crecer sin reconstruir.
+</footer>
+
+<div id="lightbox" onclick="this.style.display='none'"><img id="light-img" src=""></div>
+<script>
+function openLight(el){document.getElementById('light-img').src=el.querySelector('img').src; document.getElementById('lightbox').style.display='flex';}
+const INSTAGRAM_URL = ""; 
+const TIKTOK_URL = "";
+if(INSTAGRAM_URL){
+  document.getElementById('ig-text').innerHTML = '<a href="'+INSTAGRAM_URL+'" target="_blank" style="color:#00D1C1">'+INSTAGRAM_URL+'</a>';
+  document.getElementById('ig-btn').href = INSTAGRAM_URL; document.getElementById('ig-btn').style.opacity = 1;
+  document.getElementById('btn-ig-footer').href = INSTAGRAM_URL;
+}
+if(TIKTOK_URL){
+  document.getElementById('tk-text').innerHTML = '<a href="'+TIKTOK_URL+'" target="_blank" style="color:#00D1C1">'+TIKTOK_URL+'</a>';
+  document.getElementById('tk-btn').href = TIKTOK_URL; document.getElementById('tk-btn').style.opacity = 1;
+  document.getElementById('btn-tk-footer').href = TIKTOK_URL;
+}
+</script>
+</body>
+</html>
